@@ -5,6 +5,8 @@
 //  Created by Krikor Hovasapian on 4/28/11.
 //  Copyright 2011 UNLV Grad Student. All rights reserved.
 //
+#ifndef __SEARCHTREE_H_
+#define __SEARCHTREE_H_
 
 #include <stdio.h>
 #include <iostream>
@@ -29,6 +31,7 @@ class BinarySearchTree {
 public:    
     explicit BinarySearchTree(const Comparable &notFound);
     BinarySearchTree(const BinarySearchTree &rhs);
+    BinarySearchTree();
     ~BinarySearchTree();
     
     const Comparable &findMin() const;
@@ -58,3 +61,5 @@ private:
     void printTree(BinaryNode<Comparable> *t) const;
     BinaryNode<Comparable> * clone(BinaryNode<Comparable> *t) const;
 };
+
+#endif
