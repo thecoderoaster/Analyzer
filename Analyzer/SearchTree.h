@@ -6,6 +6,9 @@
 //  Copyright 2011 UNLV Grad Student. All rights reserved.
 //
 
+#include <stdio.h>
+#include <iostream>
+
 template <class Comparable>
 class BinarySearchTree;
 
